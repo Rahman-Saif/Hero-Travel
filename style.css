@@ -146,3 +146,60 @@ main{
     align-items: center;
     gap:1.25rem;
 }
+
+.popular-section{
+    margin-top:10rem;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-section{
+    flex-basis:36rem;
+    
+}
+
+
+.text-section h1{
+    color: #131318;
+    
+        text-align: center;
+        font-family: Mulish;
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 800;
+}
+
+.text-section p{
+    color: rgba(19, 19, 24, 0.70);
+    
+        font-family: Mulish;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.625rem;
+}
+
+.text-section ul li{
+    color: rgba(19, 19, 24, 0.70);
+    
+        font-family: Mulish;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.625rem;
+}
+
+.text-section button{
+    border-radius: 0.5rem;
+        background: #FF5400;
+        color: #FFF;
+            text-align: center;
+            font-family: Mulish;
+            font-size: 1.25rem;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            padding:1rem;
+            border:0;
+}
