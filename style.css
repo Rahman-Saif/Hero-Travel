@@ -369,3 +369,19 @@ main{
             left:80rem;
             top:238rem;
 }
+
+footer{
+    height:32rem;
+    background: rgba(19, 19, 24, 0.05);
+    display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+
+.icons{
+    display:flex;
+    align-items: center;
+    gap:5rem;
+
+}
