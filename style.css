@@ -12,20 +12,27 @@ html{
 }
 
 nav{
-    width:90%;
+    width:80%;
     margin:4rem auto;
     /* background-color: red; */
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap:24rem;
     
 }
 
 .nav-logo{
     display:flex;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
     
+}
+
+.nav-logo img{
+    width:10rem;
+    height:10rem;
 }
 
 .nav-logo h1{
@@ -46,6 +53,9 @@ nav{
         line-height: normal;
 }
 
+.nav-text i{
+    display:none;
+}
 .nav-text ul li{
     list-style:none;
 }
@@ -82,13 +92,15 @@ main{
     /* background-color: red; */
 }
 
+
 .image-section {
     width:100%;
     height:32rem;
-    background: url("./Images/Group\ 13\ \(1\)\ \(1\).png");
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%),url("./Images/Group\ 13\ \(1\)\ \(1\).png");
     background-repeat: no-repeat;
     background-size: cover;
     position:relative;
+    border-radius: 1rem;
     
 }
 
@@ -110,6 +122,7 @@ main{
         font-style: normal;
         font-weight: 800;
         line-height: normal;
+        margin-bottom:1rem;
 }
 
 .image-middleText p{
@@ -120,32 +133,47 @@ main{
         font-style: normal;
         font-weight: 400;
         line-height: 1.625rem;
-        /* 162.5% */
+        /* margin-bottom: 1rem; */
+        text-align: center;
+        
 }
 
+.box-text{
+    margin-top: 3rem;
+    width:50rem;
+    height:5.25rem;
+    border-radius: 0.5rem;
+        background: rgba(255, 255, 255, 0.30);
+}
 .box-text input,select{
     border-radius: 0.5rem;
         background: #FFF;
         border:0;
         padding:1rem;
         width: 11rem;
+        color: rgba(19, 19, 24, 0.50);
 }
 
 .box-text .btn{
     display:flex;
     align-items: center;
-    gap:1rem;
+    /* justify-content: center; */
+    gap:0.5rem;
     background: #FF5400;
     border-radius: 0.5rem;
     width:11rem;
     padding:0.9rem;
     height:3.25rem;
+    color:white;
+    /* text-align: center; */
 }
 
 .box-text form{
     display:flex;
     align-items: center;
+    justify-content: center;
     gap:1.25rem;
+    padding:1rem;
 }
 
 .popular-section{
@@ -169,6 +197,7 @@ main{
         font-size: 2.5rem;
         font-style: normal;
         font-weight: 800;
+        margin-bottom: 1rem;
 }
 
 .text-section p{
@@ -179,6 +208,7 @@ main{
         font-style: normal;
         font-weight: 400;
         line-height: 1.625rem;
+        margin-bottom: 1rem;
 }
 
 .text-section ul li{
@@ -189,11 +219,12 @@ main{
         font-style: normal;
         font-weight: 400;
         line-height: 1.625rem;
+        margin-bottom: 1rem;
 }
 
 .text-section button{
     border-radius: 0.5rem;
-        background: #FF5400;
+        background: rgb(255, 84, 0);
         color: #FFF;
             text-align: center;
             font-family: Mulish;
@@ -217,6 +248,7 @@ main{
         font-style: normal;
         font-weight: 800;
         line-height: normal;
+        margin-bottom: 1.5rem;
 }
 
 .image-grid p{
@@ -227,6 +259,7 @@ main{
         font-style: normal;
         font-weight: 400;
         line-height: 1.625rem;
+        margin-bottom: 3rem;
         /* 162.5% */
 }
 .image-grid .images{
@@ -237,6 +270,27 @@ main{
     /* justify-content: space-between; */
 }
 
+.image-grid .t-img{
+    position:relative;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.image-grid .img-text{
+    position:absolute;
+    
+}
+
+.image-grid .img-text p{
+    color: #FFF;
+        text-align: center;
+        font-family: Mulish;
+        font-size: 1.75rem;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+}
 .card-section{
     margin-top:10rem;
 }
@@ -256,6 +310,7 @@ main{
         font-style: normal;
         font-weight: 800;
         line-height: normal;
+        margin-bottom:1rem;
 }
 
 .card-section p{
@@ -266,6 +321,7 @@ main{
         font-style: normal;
         font-weight: 400;
         line-height: 1.625rem;
+        margin-bottom: 3rem;
         /* 162.5% */
 }
 .card-1{
@@ -275,7 +331,7 @@ main{
         width:35rem;
         height: 18rem;
         padding: 2rem;
-        grid-column:span 6;
+        grid-column:1/span 5;
 }
 
 .card-2{
@@ -285,7 +341,7 @@ main{
         width:35rem;
         height: 18rem;
         padding: 2rem;
-        grid-column: span 6;
+        grid-column: 6/ span 5;
 }
 
 .card-3{
@@ -299,6 +355,74 @@ main{
 
 }
 
+.testimonial-section {
+            margin-top: 10rem;
+            height: 33rem;
+            width: 100%;
+            
+            /* background-color: red; */
+        }
+
+.testimonial{
+    margin-top:8rem;
+    width:25rem;
+    height:22rem;
+    /* background-color: blue; */
+    padding:1rem;
+    border-radius: 1rem;
+        border: 2px solid #FFF;
+        background: rgba(255, 255, 255, 0.80);
+        backdrop-filter: blur(2.5px);
+}
+
+.testimonial-section h1{
+    color: #131318;
+        text-align: center;
+        font-family: Mulish;
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        text-align: center;
+}
+
+.testimonial-section p{
+    color: rgba(19, 19, 24, 0.70);
+        /* text-align: center; */
+        font-family: Mulish;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.625rem;
+        /* text-align: center; */
+        /* margin-bottom: 1rem; */
+        /* 162.5% */
+}
+.testimonial i{
+    font-size:2rem;
+    color:rgb(255, 84, 0)
+}
+
+.testimonial blockquote{
+    display: inline;
+    font-size: 2rem;
+}
+
+.testimonial .ceo{
+    margin-top:1rem;
+    font-weight:800;
+    font-size:1.3rem;
+}
+
+.testimonials{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.testimonial-header-text{
+    text-align: center;
+    margin-top:1rem;
+}
 .newsletter-section{
     margin-top:10rem;
     display:flex;
@@ -333,6 +457,7 @@ main{
         font-weight: 400;
         line-height: 1.625rem;
         margin-top: 3rem;
+        margin-bottom:2rem;
         
         /* 162.5% */
 }
@@ -343,6 +468,8 @@ main{
         width:24rem;
         height:3rem;
         margin-top: 1rem;
+        border:0;
+        padding:0.5rem;
 }
 
 .form-section button{
@@ -351,6 +478,8 @@ main{
         width:24rem;
         height:3rem;
         margin-top: 1rem;
+        border:0;
+        color:white;
 }
 
 .newsletter-image{
@@ -366,22 +495,244 @@ main{
             transform: rotate(-19.628deg);
             flex-shrink: 0;
             text-align: center;
-            left:80rem;
-            top:238rem;
+            margin-left:56rem;
+            margin-top:12rem;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
 }
 
+.image-inner-text p{
+    color: #FFF;
+        text-align: center;
+        font-family: Mulish;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+}
+
+.image-inner-text h1{
+    color: #FFF;
+        font-family: Mulish;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+}
 footer{
+    margin-top: 10rem;
     height:32rem;
     background: rgba(19, 19, 24, 0.05);
     display: flex;
         align-items: center;
         justify-content: center;
+        text-align: center;
 }
 
+.footer-text h1{
+    margin-bottom: 1rem;
+}
 
+.margin-text p{
+    margin-bottom: 3rem;
+}
+
+.icons i{
+    font-size:1.5rem;
+}
 .icons{
+    margin-top:1.25rem;
+    margin-bottom:3rem;
     display:flex;
     align-items: center;
+    justify-content: center;
     gap:5rem;
 
+}
+
+hr{
+    width:54rem;
+    margin-bottom:3rem;
+}
+
+@media screen and (max-width:576px){
+    .nav-text .nav-list{
+        display:none;
+    }
+
+    .nav-text i{
+        display:block;
+    }
+
+    nav{
+        margin-left:0;
+        gap:2rem;
+    }
+
+    .nav-logo h1{
+        font-size:2rem;
+    }
+
+    main{
+        width:100%;
+        max-width:21rem;
+    }
+    .image-section{
+        width:21rem;
+        height:31rem; 
+    }
+    .image-middleText h1{
+        font-size:1.3rem;
+    }
+    .image-middleText p{
+        font-size:0.75rem;
+        width:18rem;
+    }
+
+    .box-text{
+        width:18rem;
+        height:18rem;
+    }
+
+    .box-text form{
+        flex-direction: column;
+        padding:0.5rem;
+    }
+
+    .box-text input,select,.btn{
+        width:15rem;
+    }
+
+    .popular-section{
+        flex-direction: column;
+        max-width:21rem;
+    }
+
+    .popular-section .text-section h1{
+        font-size:1.25rem;
+    }
+
+    .popular-section .text-section p,li{
+        font-size:0.75rem;
+    }
+
+    .popular-image-section img{
+        width:21rem;
+        height:21rem;
+    }
+
+    .image-grid{
+        margin-top:6rem;
+    }
+
+    .image-grid .images{
+        flex-direction: column;
+        
+    }
+
+    .image-grid .images img{
+        width:20rem;
+        height:11rem;
+    }
+
+    .card-section{
+        max-width:20rem;
+    }
+    .cards{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+    }
+    
+    .card-1{
+        grid-column: 1/-1;
+        width:20rem;
+    }
+
+    .card-2{
+        grid-column: 1/-1;
+        width: 20rem;
+    }
+
+    .card-3{
+        grid-column: 1/-1;
+        width: 20rem;
+    }
+
+    .card-section h1{
+        font-size: 1.25rem;
+    }
+
+    .card-section p{
+        font-size:0.875rem;
+    }
+
+
+
+    .newsletter-section{
+        flex-direction: column;
+        gap:2rem;
+    }
+
+    .newsletter-section h1{
+        font-size:1.25rem;
+    }
+
+    .newsletter-section p{
+        font-size:0.85rem;
+    }
+
+    .form-section{
+        width:20rem;
+        /* height:22rem; */
+    }
+
+    .form-section button{
+        width:15rem;
+    }
+
+    .form-section input{
+        width:15rem;
+    }
+
+    .newsletter-image img{
+        width:20rem;
+        height:21rem;
+    }
+
+    .image-inner-text{
+        position:absolute;
+        width:13rem;
+        height:5rem;
+        margin-left:7rem;
+        margin-top:41rem;
+    }
+
+    footer{
+        height:20rem;
+    }
+
+    .footer-text{
+        width:17rem;
+    }
+
+    .icons{
+        gap:3rem;
+    }
+
+    .testimonials{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+    }
+
+    .testimonial-section{
+        margin-top:2rem;
+        height:auto;
+    }
+
+    .testimonial{
+        margin-top:2rem;
+        width:22rem;
+    }
 }
